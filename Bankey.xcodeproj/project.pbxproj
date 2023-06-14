@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		BD80FBB62A398BB7001CCC35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80FBB52A398BB7001CCC35 /* AppDelegate.swift */; };
-		BD80FBBA2A398BB7001CCC35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80FBB92A398BB7001CCC35 /* ViewController.swift */; };
+		BD80FBBA2A398BB7001CCC35 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80FBB92A398BB7001CCC35 /* LoginViewController.swift */; };
 		BD80FBBF2A398BBB001CCC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD80FBBE2A398BBB001CCC35 /* Assets.xcassets */; };
 		BD80FBC22A398BBB001CCC35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD80FBC02A398BBB001CCC35 /* LaunchScreen.storyboard */; };
+		BD80FBCC2A3993E8001CCC35 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80FBCB2A3993E8001CCC35 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD80FBB22A398BB7001CCC35 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD80FBB52A398BB7001CCC35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD80FBB92A398BB7001CCC35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD80FBB92A398BB7001CCC35 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD80FBBE2A398BBB001CCC35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD80FBC12A398BBB001CCC35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD80FBC32A398BBB001CCC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD80FBCB2A3993E8001CCC35 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +54,30 @@
 		BD80FBB42A398BB7001CCC35 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				BD80FBC92A3992A2001CCC35 /* Files */,
+				BD80FBCA2A3993C3001CCC35 /* Login */,
 				BD80FBB52A398BB7001CCC35 /* AppDelegate.swift */,
-				BD80FBB92A398BB7001CCC35 /* ViewController.swift */,
+			);
+			path = Bankey;
+			sourceTree = "<group>";
+		};
+		BD80FBC92A3992A2001CCC35 /* Files */ = {
+			isa = PBXGroup;
+			children = (
 				BD80FBBE2A398BBB001CCC35 /* Assets.xcassets */,
 				BD80FBC02A398BBB001CCC35 /* LaunchScreen.storyboard */,
 				BD80FBC32A398BBB001CCC35 /* Info.plist */,
 			);
-			path = Bankey;
+			name = Files;
+			sourceTree = "<group>";
+		};
+		BD80FBCA2A3993C3001CCC35 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BD80FBB92A398BB7001CCC35 /* LoginViewController.swift */,
+				BD80FBCB2A3993E8001CCC35 /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD80FBBA2A398BB7001CCC35 /* ViewController.swift in Sources */,
+				BD80FBCC2A3993E8001CCC35 /* LoginView.swift in Sources */,
+				BD80FBBA2A398BB7001CCC35 /* LoginViewController.swift in Sources */,
 				BD80FBB62A398BB7001CCC35 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
