@@ -12,14 +12,17 @@ class LoginViewController: UIViewController {
     let headerImage = UIImageView()
     let heroImage = UIImageView()
     let firstLabel = UILabel()
+    let firstLabelImg = UIImageView()
     let secondLabel = UILabel()
     let customButton = CustomButton()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         style()
         layout()
+        
         // Do any additional setup after loading the view.
     }
 }
@@ -32,7 +35,6 @@ extension LoginViewController {
         paragraphStyle.lineSpacing = 10
         let attributedText = NSAttributedString(string: secondLabeltext, attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
                 
-        
         view.backgroundColor = UIColor(named: "login-background-color")
         
         headerImage.translatesAutoresizingMaskIntoConstraints = false
@@ -46,6 +48,9 @@ extension LoginViewController {
         firstLabel.textColor = UIColor(named: "title-color")
         firstLabel.font = UIFont.systemFont(ofSize: 22, weight: .bold)
         
+        firstLabelImg.translatesAutoresizingMaskIntoConstraints = false
+        firstLabelImg.image = UIImage(named: "text-ext")
+        
         secondLabel.translatesAutoresizingMaskIntoConstraints = false
         secondLabel.text = secondLabeltext
         secondLabel.textColor = UIColor(named: "title-color")
@@ -57,17 +62,17 @@ extension LoginViewController {
         
         customButton.translatesAutoresizingMaskIntoConstraints = false
         
-        
-        
-        
     }
         
     private func layout() {
+        
         view.addSubview(headerImage)
         view.addSubview(heroImage)
         view.addSubview(firstLabel)
+        view.addSubview(firstLabelImg)
         view.addSubview(secondLabel)
         view.addSubview(customButton)
+        
 
         
         //HEADER
@@ -86,6 +91,12 @@ extension LoginViewController {
         NSLayoutConstraint.activate([
             firstLabel.topAnchor.constraint(equalToSystemSpacingBelow: heroImage.bottomAnchor, multiplier: 4.3),
             firstLabel.centerXAnchor.constraint(equalTo: heroImage.centerXAnchor)
+        ])
+        
+        //FIRSTLABEL IMAGE-EXT
+        NSLayoutConstraint.activate([
+            firstLabelImg.centerYAnchor.constraint(equalTo: firstLabel.topAnchor),
+            firstLabelImg.leadingAnchor.constraint(equalTo: firstLabel.trailingAnchor)
         ])
         
         //SECONDLABEL
