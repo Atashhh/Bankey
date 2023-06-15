@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     let heroImage = UIImageView()
     let firstLabel = UILabel()
     let secondLabel = UILabel()
-    let loginView = LoginView()
+    let customButton = CustomButton()
     
     
     override func viewDidLoad() {
@@ -55,6 +55,9 @@ extension LoginViewController {
         secondLabel.textAlignment = .center
         secondLabel.font = UIFont.systemFont(ofSize: 12, weight: .medium)
         
+        customButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        
         
         
     }
@@ -64,6 +67,8 @@ extension LoginViewController {
         view.addSubview(heroImage)
         view.addSubview(firstLabel)
         view.addSubview(secondLabel)
+        view.addSubview(customButton)
+
         
         //HEADER
         NSLayoutConstraint.activate([
@@ -88,6 +93,12 @@ extension LoginViewController {
             secondLabel.topAnchor.constraint(equalToSystemSpacingBelow: firstLabel.bottomAnchor, multiplier: 2.5),
             secondLabel.centerXAnchor.constraint(equalTo: firstLabel.centerXAnchor),
             secondLabel.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 9)
+        ])
+        
+        //BUTTON
+        NSLayoutConstraint.activate([
+            customButton.topAnchor.constraint(equalToSystemSpacingBelow: secondLabel.bottomAnchor, multiplier: 9.5),
+            customButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
         
     }

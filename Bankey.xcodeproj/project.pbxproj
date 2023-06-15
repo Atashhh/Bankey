@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7498C0252A3B434500FDB55E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7498C0242A3B434500FDB55E /* CustomButton.swift */; };
 		BD80FBB62A398BB7001CCC35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80FBB52A398BB7001CCC35 /* AppDelegate.swift */; };
 		BD80FBBA2A398BB7001CCC35 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80FBB92A398BB7001CCC35 /* LoginViewController.swift */; };
 		BD80FBBF2A398BBB001CCC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD80FBBE2A398BBB001CCC35 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7498C0242A3B434500FDB55E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		BD80FBB22A398BB7001CCC35 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD80FBB52A398BB7001CCC35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD80FBB92A398BB7001CCC35 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				BD80FBB92A398BB7001CCC35 /* LoginViewController.swift */,
 				BD80FBCB2A3993E8001CCC35 /* LoginView.swift */,
+				7498C0242A3B434500FDB55E /* CustomButton.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7498C0252A3B434500FDB55E /* CustomButton.swift in Sources */,
 				BD80FBCC2A3993E8001CCC35 /* LoginView.swift in Sources */,
 				BD80FBBA2A398BB7001CCC35 /* LoginViewController.swift in Sources */,
 				BD80FBB62A398BB7001CCC35 /* AppDelegate.swift in Sources */,
